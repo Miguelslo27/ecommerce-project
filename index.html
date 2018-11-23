@@ -11,6 +11,7 @@
   <style>
     
     body {
+      font-family: Helvetica, Arial, sans-serif;
       margin: 0; /* Margenes */
       padding: 0; /* Relleno */
     }
@@ -31,14 +32,46 @@
     padding: 10px 15px 5px 20px; // aplica 10px arriba, 15px derecha, 5px abajo, 20px izquierda
     */
     
+    /* 
+
+    reglas:
+    selector {
+      propiedas: valor;
+    
+    }
+    
+    SELECTORES
+
+    - Generales
+    a {} // aplica a todos los hipevinculos
+    .clase {} // aplica a todos los bloques que tengan esa clase
+    
+    - Particulares
+    #identificador {} // aplica al bloque que tenga ese id
+    a.clase {} // aplica a todos los bloques a con la clase
+    a#identificador {} // aplica solo al bloque a que tenga ese id
+
+    - Pseudo selectores
+    p {} // aplica a todos los parrafos
+    p:first-child {} // aplica al primer parrafo
+    
+    - Selectores de comportamiento
+    p:hover {} // aplica solo al parrafo que tiene el puntero del mouse encima
+     */
+    
     nav#navegacion_principal {
       padding: 20px;
       background-color: #DDD;
       overflow: hidden;
+      border-bottom: 1px solid #cb0200;
     }
 
     a#logo_principal {
       float: left;
+      padding: 10px 20px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #cb0200
     }
 
     ul.navegacion_horizontal {
@@ -50,14 +83,27 @@
 
     ul.navegacion_horizontal li {
       float: left;
+      background-color: #ccc;
+      margin-left: 1px;
+    }
+
+    ul.navegacion_horizontal li a {
+      display: inline-block;
       padding: 10px 20px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    ul.navegacion_horizontal li a:hover {
+      background-color: #333;
+      color: #ddd;
     }
 
   </style>
 </head>
 <body>
   <nav id="navegacion_principal">
-    <a href="#" id="logo_principal">Logo</a>
+    <a href="#" id="logo_principal">Mi Tienda</a>
     <ul class="navegacion_horizontal">
       <li><a href="#">Carrito</a></li>
       <li><a href="#">Registro</a></li>
