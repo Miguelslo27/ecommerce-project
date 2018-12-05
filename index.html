@@ -15,63 +15,23 @@
       margin: 0; /* Margenes */
       padding: 0; /* Relleno */
     }
-    
-    /*
-    COLORES
-    1. escribir el nombre del color en ingles
-    2. escribir el codigo del color en hexadecimal #RRGGBB (RGB - Rojo Verde Azul) 00 / Nada de rojo - FF / Todo de rojo
-       #6800AF
-    3. escribir el codigo del color en rgb
-       rgb(0-255, 0-255, 0-255);
-    */
 
-    /*
-    padding: 10px; // aplica a todos los lados 10 px
-    padding: 10px 15px; // aplica 10px arriba y abajo y 15px izquierda y derecha 
-    padding: 10px 15px 5px; // aplica 10px arriba, 15px izquierda y derecha, 5px abajo
-    padding: 10px 15px 5px 20px; // aplica 10px arriba, 15px derecha, 5px abajo, 20px izquierda
-    */
-    
-    /* 
-
-    reglas:
-    selector {
-      propiedas: valor;
-    
-    }
-    
-    SELECTORES
-
-    - Generales
-    a {} // aplica a todos los hipevinculos
-    .clase {} // aplica a todos los bloques que tengan esa clase
-    
-    - Particulares
-    #identificador {} // aplica al bloque que tenga ese id
-    a.clase {} // aplica a todos los bloques a con la clase
-    a#identificador {} // aplica solo al bloque a que tenga ese id
-
-    - Pseudo selectores
-    p {} // aplica a todos los parrafos
-    p:first-child {} // aplica al primer parrafo
-    
-    - Selectores de comportamiento
-    p:hover {} // aplica solo al parrafo que tiene el puntero del mouse encima
-     */
-    
-    nav#navegacion_principal {
+    header {
       padding: 20px;
       background-color: #DDD;
-      overflow: hidden;
       border-bottom: 1px solid #cb0200;
     }
-
+    
     a#logo_principal {
       float: left;
       padding: 10px 20px;
       font-size: 18px;
       text-decoration: none;
       color: #cb0200
+    }
+
+    nav#navegacion_principal {
+      overflow: hidden;
     }
 
     ul.navegacion_horizontal {
@@ -102,13 +62,18 @@
   </style>
 </head>
 <body>
-  <nav id="navegacion_principal">
+  <header>
     <a href="#" id="logo_principal">Mi Tienda</a>
-    <ul class="navegacion_horizontal">
-      <li><a href="#">Carrito</a></li>
-      <li><a href="#">Registro</a></li>
-      <li><a href="#">Ingreso</a></li>
-    </ul>
-  </nav>
+    
+    <nav id="navegacion_principal">
+      <ul class="navegacion_horizontal">
+        <li><a href="#">Carrito</a></li>
+        <li><a href="#">Registro</a></li>
+        <li><a href="#">Ingreso</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
 </body>
 </html>
