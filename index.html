@@ -16,6 +16,11 @@
       padding: 0; /* Relleno */
     }
 
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
     header {
       padding: 20px;
       background-color: #DDD;
@@ -36,8 +41,6 @@
 
     ul.navegacion_horizontal {
       float: right;
-      margin: 0;
-      padding: 0;
       list-style: none;
     }
 
@@ -59,6 +62,36 @@
       color: #ddd;
     }
 
+    #columna_izquierda {
+      float: left;
+      border-right: 1px solid #cb0200;
+      width: 25%;
+      height: calc(100vh - 79px);
+    }
+
+    #columna_izquierda h2 {
+      margin-left: 20px;
+      color: #830200;
+      text-decoration: underline;
+    }
+
+    #navegacion_lateral { }
+
+    #navegacion_lateral ul {
+      list-style: none;
+    }
+
+    #navegacion_lateral ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #cb0200;
+    }
+
+    #navegacion_lateral ul li a:hover {
+      background-color: #f0d9d9;
+    }
+
   </style>
 </head>
 <body>
@@ -74,6 +107,16 @@
     </nav>
   </header>
 
-
+  <aside id="columna_izquierda">
+    <h2>Categorias</h2>
+    <nav id="navegacion_lateral">
+      <ul>
+        <li><a href="#">Hombres</a></li>
+        <li><a href="#">Mujeres</a></li>
+        <li><a href="#">Niños</a></li>
+        <li><a href="#">Articulos</a></li>
+      </ul>
+    </nav>
+  </aside>
 </body>
 </html>
